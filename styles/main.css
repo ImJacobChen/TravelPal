@@ -1,2 +1,65 @@
-#wrapper{background-color:#e9ebee}#header{background-color:#337ab7;padding:0 5px;border-bottom:1px solid #2e6da4}#header h1{color:#fff;margin:0;font-family: 'Bitter', serif;}#content{background-color:#e9ebee;padding:20px;min-height:100vh}.suggestions{background-color:#fff;list-style-type:none;border-radius:3px;box-shadow:0 0 15px grey}.suggestions li{padding:1px;cursor:pointer;background-color:#fff}.suggestions li:hover{background-color:#e5e5e5}.journey{background-color:#fff;padding:5px;margin:15px 0}.journey .journeyDetail,.journey .journeyTitle{border-bottom:1px solid #d3d3d3}.journey .journeyDetails{margin:0}.journey .journeyOverview{border-bottom:1px solid #d3d3d3}.journey .journeyDetails div{text-align:center}.journey .journeyOverview div{display:inline-block}.journey .journeyLegs .journeyLeg:nth-child(even){background:#e5e5e5}.journey .journeyLeg{padding:5px}.journey .journeyLeg div{display:inline-block;width:30%;text-align:center}
-/*# sourceMappingURL=main.css.map */
+#wrapper {
+  background-color: #e9ebee;
+}
+
+#header {
+  background-color: #337ab7;
+  padding: 0 5px;
+  border-bottom: 1px solid #2e6da4;}
+  #header h1 {
+    font-family: 'Bitter', serif;
+    color: white;
+    margin: 0;
+  }
+
+#content {
+  background-color: #e9ebee;
+  padding: 20px 0;
+  min-height: 100vh;
+}
+
+#form,
+#recentJourneys {
+  padding: 0 20px;
+}
+
+.suggestions {
+  background-color: white;
+  list-style-type: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px grey;}
+  .suggestions li {
+    padding: 1px;
+    cursor: pointer;
+    background-color: white;
+  }
+  .suggestions li:hover {
+    background-color: #e5e5e5;
+  }
+
+.journey {
+  background-color: white;
+  padding: 5px;
+  margin: 15px 0;}
+  .journey .journeyTitle,
+  .journey .journeyDetail {
+    border-bottom: 1px solid lightgrey;}
+  .journey .journeyDetails {
+    margin: 0;
+  }
+  .journey .journeyOverview {
+    border-bottom: 1px solid lightgrey;}
+    .journey .journeyDetails div {
+      text-align: center;}
+    .journey .journeyOverview div {
+      display: inline-block;}
+  .journey .journeyLegs .journeyLeg:nth-child(even) {
+    background: #e5e5e5;}
+    .journey .journeyLeg {
+      padding: 5px;}
+      .journey .journeyLeg div {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+      }
+
