@@ -187,7 +187,7 @@
 
 			var h3OptionNumber = document.createElement('h3');
 			h3OptionNumber.className = 'subheading muted';
-			h3OptionNumber.innerHTML = '['+ journeyCount +'/'+ journeysData.length +']';
+			h3OptionNumber.innerHTML = 'Option ['+ journeyCount +'/'+ journeysData.length +']';
 
 			journeyTitle.appendChild(h3Title);
 			journeyTitle.appendChild(h3OptionNumber);
@@ -247,7 +247,10 @@
 
 				var journeyLegDetails = document.createElement('div');
 				journeyLegDetails.className = 'journeyLegDetails';
-
+				var linesOptions = document.createElement('div');
+				linesOptions.className = 'lineOptions';
+				linesOptions.innerHTML = '<b>Line options:</b>';
+				journeyLegDetails.appendChild(linesOptions);
 				leg.routeOptions.forEach(function(routeOption) {
 					var line = document.createElement('div');
 					line.className = routeOption.lineIdentifier.id;
