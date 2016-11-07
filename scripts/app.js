@@ -77,7 +77,7 @@
 	    	li.innerHTML = station.name;
 
 	    	// Add event listener to <li> suggestions
-	    	li.addEventListener('click', function() {
+	    	li.addEventListener('click touchstart', function() {
     			app._onSuggestionClick(station.name, station.icsId, textInput, suggestionsBox, formGroup);
     		});
 
