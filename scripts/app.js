@@ -245,9 +245,23 @@
 				var legArrivalTimeParts = leg.arrivalTime.split('T', 2);
 				journeyLegEnd.innerHTML = '<b>'+ leg.arrivalPoint.commonName +'</b> <br> Arrive - ' + legArrivalTimeParts[1];
 
+				var journeyLegDetails = document.createElement('div');
+				journeyLegDetails.className = 'journeyLegDetails';
+				var linesOptions = document.createElement('div');
+				linesOptions.className = 'lineOptions';
+				linesOptions.innerHTML = '<b>Line options:</b>';
+				journeyLegDetails.appendChild(linesOptions);
+				leg.routeOptions.forEach(function(routeOption) {
+					var line = document.createElement('div');
+					line.className = routeOption.lineIdentifier.id;
+					line.innerHTML = routeOption.lineIdentifier.name;
+					journeyLegDetails.appendChild(line);	
+				});
+
 				journeyLeg.appendChild(journeyLegStart);
 				journeyLeg.appendChild(journeyLegArrow);
 				journeyLeg.appendChild(journeyLegEnd);
+				journeyLeg.appendChild(journeyLegDetails);
 
 				journeyLegs.appendChild(journeyLeg);
 			});
