@@ -1,6 +1,6 @@
 {
-  "name": "Travel Pal",
-  "short_name": "Travel Pal",
+  "name": "Travel Guide",
+  "short_name": "Travel Guide",
   "icons": [{
         "src": "images/touch/icon-128x128.png",
         "sizes": "128x128",
