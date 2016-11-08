@@ -52,18 +52,26 @@
 
         <form id="form" class="form">
           <div class="row">
-
+            <h2>Your Journey</h2>
             <div id="fromFormGroup" class="col-md-4 form-group">
+              <span id="fromHelpBlock" class="help-block" data-defaultText="Where are you travelling from?">Travelling from</span>
               <input id="travellingFrom" class="form-control input-field" type="text" name="from" placeholder="" aria-describedby="fromHelpBlock" data-travellingFrom autofocus>
-              <span id="fromHelpBlock" class="help-block" data-defaultText="Where are you travelling from?">Where are you travelling from?</span>
               <ul id="from-suggestions" class="suggestions"></ul>
             </div>
 
             <div id="toFormGroup" class="col-md-4 form-group">
+              <span id="toHelpBlock" class="help-block" data-defaultText="Travelling to">Travelling to</span>
               <input id="travellingTo" class="form-control input-field" type="text" name="to" placeholder="" aria-describedby="toHelpBlock">
-              <span id="toHelpBlock" class="help-block" data-defaultText="Where are you travelling to?">Where are you travelling to?</span>
               <ul id="to-suggestions" class="suggestions"></ul>
             </div>
+            
+            <!--div id="date-div">
+              <label for="date">Date</label><input id="date" type="date"/>
+            </div>
+            
+            <div id="time-div">
+              <label for="time">Time</label><input id="time" type="time"/>
+            </div-->
             
             <div class="col-md-2">
               <button class="btn btn-primary form-control">Go</button>

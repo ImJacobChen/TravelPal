@@ -1,7 +1,12 @@
+/**
+ * Wrapper
+ */
 #wrapper {
   background-color: white;
 }
-
+/**
+ * Header
+ */
 #header {
   background-color: #1a5a92;
   padding: 0 5px;
@@ -12,18 +17,35 @@
     margin: 0;
   }
 }
-
+/**
+ * Content
+ */
 #content {
   background-color: white;
   padding: 20px 0;
   min-height: 100vh;
 }
 
-#form,
-#recentJourneys {
-  padding: 0 20px;
+/**
+ * Form
+ */
+#form {
+  .help-block {
+    display: block;
+  }
+}
+#date-div,
+#time-div {
+  label,
+  input {
+    display: block;
+  }
+  margin: 5px 0;
 }
 
+/**
+ * Recent Journeys
+ */
 #recentJourneys_ul li {
   cursor: pointer;
 
@@ -31,15 +53,39 @@
     background-color: #FAFAFA;
   }
 }
-
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 820px) {
+  #recentJourneys {
+    position: fixed;
+    right: 0;
+  }
+  #journeys {
+  max-width: 550px;
+}
+
+}
+
+/**
+ * Journeys
+ */
+
+#form,
+#recentJourneys {
+  padding: 0 20px;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 500px) {
   #form,
   #recentJourneys {
-    padding: 0;
+    padding: 0 20px;
     max-width: 50%;
+    display: inline-block;
+  }
+  #recentJourneys {
+    float: right;
   }
 }
+
 
 .suggestions {
   background-color: white;
@@ -100,7 +146,15 @@
     }
   }
 } 
-
+/*
+States
+ */
+.has-success {
+  color: green;
+}
+.has-error {
+  color: red;
+}
 /*
 Train line classes
 */

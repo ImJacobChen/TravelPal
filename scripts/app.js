@@ -364,7 +364,7 @@
 			if (formGroup.classList.contains('has-error')) formGroup.classList.remove('has-error');
 
 			formGroup.classList.add('has-success');
-			helpBlock.innerHTML = "Excellent. You selected: <b>" + station + "</b>";
+			helpBlock.innerHTML = "You selected: <b>" + station + "</b>";
 		}
 	};
 
@@ -373,11 +373,11 @@
 	* Code required to start the app
 	*
 	****************************************************************************/
-	if ('serviceWorker' in navigator) {
+	/*if ('serviceWorker' in navigator) {
 	  navigator.serviceWorker
 	           .register('/service-worker.js')
 	           .then(function() { console.log('Service Worker Registered'); });
-	}
-	journeyDB.open(app.refreshRecentJourneys);	
+	}*/
+	journeyDB.open(app.refreshRecentJourneys);
 	
 })();
